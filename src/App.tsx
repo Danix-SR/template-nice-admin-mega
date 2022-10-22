@@ -1,12 +1,12 @@
 import React from 'react';
 import './App.css';
-import { Header } from './common/components/header/Header';
+import { MainTemplate } from './common/templates/Main-Template';
 
 export function App(): JSX.Element {
   return (
     <div>
       <header>
-        <Header />
+        <MainTemplate />
       </header>
     </div>
   );
