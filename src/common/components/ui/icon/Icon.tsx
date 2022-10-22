@@ -1,10 +1,5 @@
 import React from 'react';
-
-export interface IconProps {
-  children?: React.ReactNode;
-  icon: string;
-  className?: string;
-}
+import { IconProps } from './IconModels';
 
 export function Icon({
   children,

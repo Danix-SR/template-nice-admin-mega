@@ -1,22 +1,6 @@
 import React from 'react';
 import { DropdownNavItem } from './Dropdown-Nav-Item';
-
-export interface userNotification {
-  id: number;
-  icon: string;
-  title: string;
-  text: string;
-  fecha: Date;
-  color?: string;
-}
-
-export interface DropdownProps {
-  children?: React.ReactNode;
-  className?: string;
-  onClick?: () => void;
-  dropdownData: userNotification[];
-}
-
+import { DropdownProps } from './DropdownModels';
 export function DropdownNav({
   children,
   className,

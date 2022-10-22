@@ -2,19 +2,7 @@ import React from 'react';
 import { Button } from '../../components/ui/button/Button';
 import { DropdownSideItem } from '../ui/dropdown/Dropdown-Side-Item';
 import { useDetectClickOut } from '../../hooks/useDetectClickOut';
-
-export interface sidebarMenu {
-  id: number;
-  title: string;
-  icon: string;
-  items: Array<{ id: number; title: string }>;
-}
-
-export interface SideBarProps {
-  children?: React.ReactNode;
-  className?: string;
-  sidebarMenu: sidebarMenu;
-}
+import { SideBarProps } from './SideModel';
 
 export function SideBar({
   children,

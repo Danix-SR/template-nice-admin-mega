@@ -1,13 +1,5 @@
 import React, { forwardRef } from 'react';
-
-export interface ButtonProps {
-  children?: React.ReactNode;
-  className?: string;
-  onClick?: () => void;
-  title?: string;
-  selected?: boolean;
-  disabled?: boolean;
-}
+import { ButtonProps } from './ButtonModels';
 
 export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
   function Button(

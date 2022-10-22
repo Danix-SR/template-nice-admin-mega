@@ -1,10 +1,5 @@
 import React from 'react';
-
-export interface LogoProps {
-  height?: string;
-  width?: string;
-  color?: string;
-}
+import { LogoProps } from './LogoModels';
 
 export function LogoMega({
   height = '24px',

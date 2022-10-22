@@ -1,11 +1,6 @@
 import React from 'react';
 import { SideItem } from '../../side/Side-Item';
-
-export interface DropdownSideItemProps {
-  children?: React.ReactNode;
-  className?: string;
-  sidebarItems: Array<{ id: number; title: string }>;
-}
+import { DropdownSideItemProps } from './DropdownModels';
 
 export function DropdownSideItem({
   children,

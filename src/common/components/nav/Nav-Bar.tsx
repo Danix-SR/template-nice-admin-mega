@@ -1,8 +1,5 @@
 import React from 'react';
-
-export interface NavbarProps {
-  children?: React.ReactNode;
-}
+import { NavbarProps } from './NavModels';
 
 export function Navbar({ children }: NavbarProps): JSX.Element {
   return (

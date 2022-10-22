@@ -1,14 +1,7 @@
 import React from 'react';
 import { Button } from '../ui/button/Button';
 import { useDetectClickOut } from '../../hooks/useDetectClickOut';
-
-export interface NavItemProps {
-  children?: React.ReactNode;
-  className?: string;
-  bntClassName: string;
-  title?: string;
-  icon?: React.ReactNode;
-}
+import { NavItemProps } from './NavModels';
 
 export function NavItem({
   children,

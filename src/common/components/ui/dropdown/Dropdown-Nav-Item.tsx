@@ -1,16 +1,6 @@
 import React from 'react';
 import classNames from 'classnames';
-
-export interface DropdownItemProps {
-  children?: React.ReactNode;
-  className?: string;
-  onClick?: () => void;
-  title: string;
-  icon: string;
-  text: string;
-  fecha: Date;
-  color?: string;
-}
+import { DropdownItemProps } from './DropdownModels';
 
 export function DropdownNavItem({
   children,
