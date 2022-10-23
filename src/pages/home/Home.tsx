@@ -1,6 +1,6 @@
 import React from 'react';
 import { DataGrid, GridColDef, GridValueGetterParams } from '@mui/x-data-grid';
-import { Auth } from './MainModels';
+import { MainTemplate } from '../../common/templates/Main-Template';
 
 const columns: GridColDef[] = [
   { field: 'id', headerName: 'ID', width: 70 },
@@ -35,18 +35,37 @@ const rows = [
   { id: 9, lastName: 'Roxie', firstName: 'Harvey', age: 65 }
 ];
 
-const Authdd: Auth = { className: 'Hola mundo' };
-
-console.log(Authdd);
-export function Main(): JSX.Element {
+export function Home(): JSX.Element {
   return (
-    <div style={{ height: 250, width: '50%' }}>
-      <DataGrid
-        rows={rows}
-        columns={columns}
-        pageSize={5}
-        rowsPerPageOptions={[5]}
-      />
-    </div>
+    <MainTemplate>
+      <main id="main" className="main">
+        <div className="pagetitle">
+          <h1> Main </h1>
+        </div>
+        <section className="section">
+          <div className="row">
+            <div className="col-lg-12">
+              <div className="row">
+                <div className="col-lg-12">
+                  <div className="card">
+                    <div className="card-body">
+                      <h5 className="card-title">Tooltips Examples</h5>
+                      <div style={{ height: 250, width: '50%' }}>
+                        <DataGrid
+                          rows={rows}
+                          columns={columns}
+                          pageSize={5}
+                          rowsPerPageOptions={[5]}
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </MainTemplate>
   );
 }
