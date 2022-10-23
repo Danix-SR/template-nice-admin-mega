@@ -759,19 +759,26 @@
     text-decoration: none;
   }
   
-  .sidebar-nav .nav-content a i {
+  .sidebar-nav .nav-content a .bi-circle {
     font-size: 6px;
     margin-right: 8px;
     line-height: 0;
     border-radius: 50%;
   }
   
+  .sidebar-nav .nav-content a i {
+    font-size: 20px;
+    margin-right: 10px;
+    line-height: 0;
+    border-radius: 50%;
+  }
+
   .sidebar-nav .nav-content a:hover,
   .sidebar-nav .nav-content a.active {
     color: #4154f1;
   }
   
-  .sidebar-nav .nav-content a.active i {
+  .sidebar-nav .nav-content a.active .bi-circle {
     background-color: #4154f1;
   }
   

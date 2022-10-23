@@ -16,7 +16,7 @@ export interface userNotification {
 export interface DropdownSideItemProps {
   children?: React.ReactNode;
   className?: string;
-  sidebarItems: Array<{ id: number; title: string }>;
+  sidebarItems: Array<{ id: number; title: string; icon: string }>;
 }
 
 export interface DropdownItemProps {

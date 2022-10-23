@@ -1,12 +1,26 @@
-export interface sidebarMenu {
+export interface SideBarManu {
   id: number;
   title: string;
   icon: string;
-  items: Array<{ id: number; title: string }>;
+  items: SideBarManuItem[];
 }
 
 export interface SideBarProps {
   children?: React.ReactNode;
   className?: string;
-  sidebarMenu: sidebarMenu;
+  sidebarMenu: SideBarManu;
+}
+
+export interface SideBarManuItem {
+  id: number;
+  title: string;
+  icon: string;
+}
+
+export interface SideItemProps {
+  children?: React.ReactNode;
+  className?: string;
+  id: number;
+  title: string;
+  icon: string;
 }

@@ -4,12 +4,12 @@ import { IconProps } from './IconModels';
 export function Icon({
   children,
   className = '',
-  icon = 'app',
+  icon = 'bi bi-app',
   ...props
 }: IconProps): JSX.Element {
   return (
     <React.Fragment>
-      <i className={`bi bi-${icon} ${className}`} />
+      <i className={`${icon} ${className}`} />
       {children}
     </React.Fragment>
   );

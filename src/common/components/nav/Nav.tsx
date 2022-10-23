@@ -58,7 +58,7 @@ export function Nav(): JSX.Element {
           bntClassName="nav-link nav-icon btn-Transparent-Icon"
           title="Campana"
           icon={
-            <Icon icon="bell">
+            <Icon icon="bi bi-bell">
               <span className="badge bg-primary badge-number">4</span>
             </Icon>
           }
@@ -69,7 +69,7 @@ export function Nav(): JSX.Element {
           bntClassName="nav-link nav-icon btn-Transparent-Icon"
           title="Notificaciones"
           icon={
-            <Icon icon="chat-left-text">
+            <Icon icon="bi bi-chat-left-text">
               <span className="badge bg-success badge-number">4</span>
             </Icon>
           }

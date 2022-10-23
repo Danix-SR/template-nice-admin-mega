@@ -1,18 +1,14 @@
 import React from 'react';
 import { useDetectClickOut } from '../../hooks/useDetectClickOut';
-
-export interface SideItemProps {
-  children?: React.ReactNode;
-  className?: string;
-  id: number;
-  title: string;
-}
+import { Icon } from '../ui/icon/Icon';
+import { SideItemProps } from './SideModel';
 
 export function SideItem({
   children,
   className,
   id,
-  title
+  title,
+  icon
 }: SideItemProps): JSX.Element {
   const { ref, show, ChangeState } = useDetectClickOut();
   return (
@@ -23,6 +19,7 @@ export function SideItem({
         onClick={ChangeState}
       >
         <i className="bi bi-circle"></i>
+        <Icon icon={icon} />
         <span>{title}</span>
       </a>
     </li>

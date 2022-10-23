@@ -14,7 +14,12 @@ export function DropdownSideItem({
       data-bs-parent="#sidebar-nav"
     >
       {sidebarItems.map((item, index) => (
-        <SideItem key={index} id={item.id} title={item.title} />
+        <SideItem
+          key={index}
+          id={item.id}
+          title={item.title}
+          icon={item.icon}
+        />
       ))}
     </ul>
   );
