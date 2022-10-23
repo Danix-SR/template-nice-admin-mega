@@ -1,3 +1,4 @@
+// Los iconos se optienen desde https://icons.getbootstrap.com/
 import React from 'react';
 import { IconProps } from './IconModels';
 

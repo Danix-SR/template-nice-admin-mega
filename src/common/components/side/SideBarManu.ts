@@ -3,12 +3,6 @@ import { SideBarManu } from './SideModel';
 export const SideBarMenuArray: SideBarManu[] = [
   {
     id: 1,
-    title: 'Perfil',
-    icon: 'bi bi-person-square',
-    items: [{ id: 1, title: 'Editar Perfil', icon: 'bi bi-person-check' }]
-  },
-  {
-    id: 2,
     title: 'Proveedor',
     icon: 'bi bi-journal-text',
     items: [
@@ -17,7 +11,7 @@ export const SideBarMenuArray: SideBarManu[] = [
     ]
   },
   {
-    id: 3,
+    id: 2,
     title: 'Evaluacion',
     icon: 'bi bi-clipboard2-check',
     items: [
@@ -26,7 +20,7 @@ export const SideBarMenuArray: SideBarManu[] = [
     ]
   },
   {
-    id: 4,
+    id: 3,
     title: 'Reportes',
     icon: 'bi bi-file-earmark-text',
     items: [
@@ -36,7 +30,7 @@ export const SideBarMenuArray: SideBarManu[] = [
     ]
   },
   {
-    id: 5,
+    id: 4,
     title: 'Administracion',
     icon: 'bi bi-file-earmark-text',
     items: [{ id: 1, title: 'Usuarios', icon: 'bi bi-person-video2' }]

@@ -2,7 +2,7 @@ import React from 'react';
 import classNames from 'classnames';
 import { DropdownItemProps } from './DropdownModels';
 
-export function DropdownNavItem({
+export function DropdownNavIconItem({
   children,
   className,
   onClick,

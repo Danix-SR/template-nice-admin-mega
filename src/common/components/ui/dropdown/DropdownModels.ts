@@ -1,9 +1,17 @@
-export interface DropdownProps {
+export interface DropdownNavIconProps {
   children?: React.ReactNode;
   className?: string;
   onClick?: () => void;
-  dropdownData: userNotification[];
+  DropdownNavIconData: userNotification[];
 }
+
+export interface DropdownNavProfileProps {
+  children?: React.ReactNode;
+  className?: string;
+  onClick?: () => void;
+  DropdownNavProfileData: userProfile[];
+}
+
 export interface userNotification {
   id: number;
   icon: string;
@@ -11,6 +19,12 @@ export interface userNotification {
   text: string;
   fecha: Date;
   color?: string;
+}
+
+export interface userProfile {
+  id: number;
+  icon: string;
+  title: string;
 }
 
 export interface DropdownSideItemProps {
@@ -28,4 +42,11 @@ export interface DropdownItemProps {
   text: string;
   fecha: Date;
   color?: string;
+}
+
+export interface DropdownProfileProps {
+  children?: React.ReactNode;
+  className?: string;
+  title: string;
+  iconName: string;
 }

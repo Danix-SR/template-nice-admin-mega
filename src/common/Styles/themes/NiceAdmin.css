@@ -1278,11 +1278,18 @@
     border-color: transparent;
     box-shadow: none;
   }
-  .dropdown-menu-position{
+  .dropdown-menu-icon-position{
     position: absolute;
     inset: 0px 0px auto auto;
     margin: 0px;
     transform: translate(-25px, 35px);
+  }
+
+  .dropdown-menu-profile-position{
+    position: absolute; 
+    inset: 0px 0px auto auto; 
+    margin: 0px; transform: 
+    translate(-16px, 38px);
   }
   
   .sidebar-nav .nav-item button i.bi-chevron-down {
